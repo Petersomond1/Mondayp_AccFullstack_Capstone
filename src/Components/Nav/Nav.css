@@ -1,0 +1,238 @@
+.navbar_component {
+    width: 110vw;
+    height: 50px;
+    background-color: #131A22;
+    display: flex;
+    color: white;
+    position:sticky;
+      top:0px;
+      /* z-index: 50; */
+      top: 0;
+    left: 0;
+    z-index: 198;
+    position: static;
+    float: none;
+    flex-shrink: 0;
+    text-decoration: none;
+    padding: 1px 8px 0 6px;
+    margin: 1px;
+}
+
+.nav-amazonlogo_layer1 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border: 1px transparent solid;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    transition-duration: 300ms;
+    margin-top: 10px;
+    
+  }
+  
+  .nav-amazonlogo_layer1:hover {
+    border-color: white;
+    margin-left: 3px;
+    box-sizing: border-box;
+  }
+
+.nav-amazonlogo {
+    background: url('https://ik.imagekit.io/amazonmondayp/amazon-image/sprite_350x.png?updatedAt=1693788045797') no-repeat -9px -50px;
+	width: 98px;
+	height: 31px;
+    margin-left: 2px;
+   
+}
+
+.nav_amazonlogo_locale {
+    margin-top: -4px;
+    margin-left: 3px;
+}
+   
+.nav_addresslocator {
+    margin-top: 10px;
+    display: inline-flex;
+     color: white;
+    width: 160px;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    border: 1px transparent solid;
+    height: 68px;
+    align-content: center;
+}
+
+.nav_addresslocator:hover {
+    border-color: white;
+    cursor:pointer;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    box-sizing: border-box white 1px solid;
+    border: 2px transparent white;
+    margin: 3px, 0, 3px, 0;
+    height: fit-content;
+    
+  }
+
+.nav_addresslocatoricon {
+    margin-left: 5px;
+    color: white;
+    background: url('https://ik.imagekit.io/amazonmondayp/amazon-image/sprite_350x.png?updatedAt=1693788045797') no-repeat -70px -305px;
+	width: 19px;
+	height: 22px;  
+}
+
+.nav_greetinglocationtextwrap {
+    margin-left: 20px;
+    display:grid;
+    width: 150px;
+    margin-top: -9px;
+}
+.nav_greeting {
+    font-size: small;
+    
+}
+.nav_yourlocation {
+font-weight: bold;
+
+}
+
+.navbar_search_container {
+    display:inline-flex;
+    align-content: center;
+    align-items: center;
+    margin-top: 9px; 
+    }
+
+    .navleft_dropdown_select{
+        width: 110px;
+        height: 34px;
+        margin-left: 20px;
+        background-color: #D4D4D4;
+        border-radius: 5px 0px 0px 5px;
+    }
+       
+    .navfill_searchbox {
+        width:fit-content;
+        height: 28px;
+        margin-left: 0px;
+    }  
+   
+    
+    .navright-searchicon {
+        background: url('https://ik.imagekit.io/amazonmondayp/amazon-image/sprite_350x.png?updatedAt=1693788045797') no-repeat -8px -282px;
+        width: 23px;
+        height: 27px;
+        background-color: #F3A847;
+        height: 32px;
+        width: 28px;
+        border-radius: 0px 5px 5px 0px;
+    }
+        
+    
+
+    .nationlanguage_wrap {
+        display:inline-flex;
+        margin-top: 22px; 
+    }
+    
+    .flagicon{
+        margin-top: 4px;
+        margin-bottom: 4px;
+        margin-left: 20px;
+    }
+        
+    .navbar_nationallanguag_abrev {
+      margin-top: 3px;
+      margin-left: 3px;
+      
+    }
+    
+    .nav-right {
+    display:flex;
+    margin-left: 10px;
+    margin-right: 0px;
+    margin-top: 9px;
+    width:fit-content;
+    align-items: center;
+
+  }
+
+    .navbar_signinaccounts {
+    width:fit-content;
+    margin-top: 0px;
+    margin-left: 0px;
+    
+    }
+    .hellosignin {
+        font-size: 14px;
+    }
+    
+    .accountlists {
+        font-weight: bold;
+    }
+    
+    .navbar_returnsandorders {
+    width:fit-content;
+    margin-left: 10px;
+    margin-right: 0px;
+    }
+    
+    .returns_text{
+    font-size: small;
+    }
+    .orders_text {
+    font-weight: bold;
+    }
+    
+    .navbar_cart {
+        margin-left: 10px;
+        font-weight: bold;
+        display: block;
+        }
+    
+        .cart_text {
+            margin-top: -15px;
+            margin-left: 35px;
+            margin-right: 0px;
+        }
+    
+        .cart_icon {
+            background: url('https://ik.imagekit.io/amazonmondayp/amazon-image/sprite_350x.png?updatedAt=1693788045797') no-repeat -9px -339px;
+            width: 40px;
+            height: 30px;
+            margin-top: -15px;
+            margin-left:0px;
+        }
+    
+        .count {
+            color: #F08804;
+            margin-left: 17px;
+            margin-right: 1px;
+        }
+    
+       
+    
+        .all_sidedirectorydropdown_icon {
+            background: url('https://ik.imagekit.io/amazonmondayp/amazon-image/sprite_350x.png?updatedAt=1693788045797') no-repeat -171px -254px;
+            width: 19px;
+            height: 16px;
+            margin-top: 7px;
+            float: left;
+        }
+
+
+.navdown_belt {
+    width : 100vw;
+    height: 35px;
+    background-color: #232F3E;
+    color : white;
+    display: flex;
+    line-height: 1.5em;
+    font-size: 14px;
+    font-display: flex;
+    float: left;
+    flex-flow:column-reverse wrap;
+    
+}
