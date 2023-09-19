@@ -1,12 +1,12 @@
 .navbar_component {
-    width: 110vw;
+    width: 100vw;
     height: 50px;
     background-color: #131A22;
     display: flex;
     color: white;
     position:sticky;
       top:0px;
-      /* z-index: 50; */
+    z-index: 100;
       top: 0;
     left: 0;
     z-index: 198;
@@ -106,7 +106,7 @@ font-weight: bold;
     }
 
     .navleft_dropdown_select{
-        width: 110px;
+        width: 100px;
         height: 34px;
         margin-left: 20px;
         background-color: #D4D4D4;

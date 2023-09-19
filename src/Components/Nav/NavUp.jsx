@@ -6,6 +6,8 @@ import ReturnsOrders from "./Returns_Orders";
 export default function NavUp() {
   return (
     <>
+    <div className="navup_container">
+     
       <div className="navbar_component">
         <div className="nav-amazonlogo_layer1">
           <div className="nav-amazonlogo" href="/ref=nav_amazonlogo"></div>
@@ -182,6 +184,7 @@ export default function NavUp() {
             <Cart />{" "}
           </div>
         </div>
+      </div>
       </div>
     </>
   );

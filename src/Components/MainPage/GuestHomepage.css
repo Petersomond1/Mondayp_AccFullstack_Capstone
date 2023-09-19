@@ -1,0 +1,106 @@
+
+.slide_container {
+  width: 100vw;
+  height: 95vh;
+  z-index: -1;
+  /* margin-bottom: -150px; */
+  margin-left: 0px;
+  margin-right: 0px;
+  position: relative;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); 
+}
+
+
+
+/*  The container for GuestMainpageJsx */
+
+.mainpage_container {
+    width: 100vw;
+    height: auto;
+    z-index: -5;
+    /* background-color:blueviolet; */
+    background-size: 100vw;
+    display:flex;
+    position:static;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    overflow:scroll;
+    justify-content: center;
+    max-width: 1500px;
+  }
+
+   /* NOTE This is egual or is supposed to be the main carousel as background */
+  /* position:sticky; */
+   
+    /* object-position:0%; */
+    
+    /* position: absolute */
+
+/* This is the container for the whole mainpage of Adverts inside Guestmainpage below carousel */
+  
+/* .submainpage_container {
+    z-index: 3;
+    margin-top:650px;
+    display:grid;
+    flex-wrap: wrap;
+  } */
+
+  /* .advert_container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    overflow:scroll
+  } */
+
+  .page__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -15px;
+    z-index: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+.advert1_main {
+background-color: white;
+z-index: auto;
+padding: 5px;
+margin-left: 10px;
+margin: 5px;
+border: 2px solid blueviolet;
+}
+
+.advert1_header {
+font-size: 21px;
+line-height: 27px;
+font-weight: bold;
+padding: 15px;
+}
+.advert1_body {
+padding-left: 10px;
+padding-right: 10px;
+}
+.advert1_footer {
+padding: 15px;
+color:blue;
+}
+
+.advertpagerow4_carousel {
+  height: 600px;
+  background-color: white;
+}
+
+.AdvertpageRow5_slider-app {
+  .rsis-container {
+    width: 1300px;
+    height: 200px; 
+  }
+}
+
+.AdvertpageRow5_slider-app {
+  .rsis-image {
+    background-size: contain !important;
+  }
+}
