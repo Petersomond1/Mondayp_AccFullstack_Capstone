@@ -3,7 +3,7 @@ import 'react-slideshow-image/dist/styles.css';
 
 
 
-export default function Advertpage() {
+export default function AdvertpageRow_2_3_4 () {
   return (
     
 <>
@@ -69,4 +69,4 @@ export default function Advertpage() {
     
   );
 }
-Advertpage;
+AdvertpageRow_2_3_4;

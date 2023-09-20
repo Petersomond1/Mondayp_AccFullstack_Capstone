@@ -3,9 +3,13 @@
 // import NavUp from './Components/Nav/NavUp'
 // import NavDown from './Components/Nav/NavDown'
 // import  './Components/Nav/Nav.css'
-// import GuestMainpage from './Components/MainPage/GuestMainpage.jsx'
-// import MainStore from './Components/MainPage/MainStore'
-// import AdvertpageRow1_Carousel from './Components/MainPage/AdvertpageRow1_Carousel'
+// import Mainstore from './Components/Mainstore'
+// // import SearchResults from './Components/SearchResults'
+// // import  ProductPage from './Components/ProductPage'
+// // import Checkout from './Components/Checkout'
+// import './App.css'
+// import './index.jsx'
+
 
 
 // function App() {
@@ -22,12 +26,9 @@
 //       </div>
 //       {/* Home made of Advert & Selling Product components below here */}
 //       <div>
-//       <GuestMainpage/> 
+//       <Mainstore/>
 //       </div>
-//       <div>
-//       <MainStore/>
-//       </div>
-//       {/* <AdvertpageRow1_Carousel/> */}
+     
 //       {/* {Footers Components all below} */}
 //     </>
 //   )
@@ -37,26 +38,27 @@
 
 
 // Path: src/App.jsx
+
+import React from 'react'
+import NavUp from './Components/Nav/NavUp'
+import NavDown from './Components/Nav/NavDown'
+import  './Components/Nav/Nav.css'
+import Mainstore from './Components/Mainstore'
+import './App.css'
+import './index.jsx'
 import { Routes, Route } from "react-router-dom";
-import NavUp from "./Components/Nav/NavUp";
-import NavDown from "./Components/Nav/NavDown";
-import GuestMainpage from './Components/MainPage/GuestMainpage';
-import MainStore from './Components/MainPage/MainStore'
 import SearchResults from './Components/SearchResults';
 import ProductPage from './Components/ProductPage';
 import Checkout from './Components/Checkout';
-import React from "react";
-import './App.css'
-// import './index.js'
+
 
 function App () {
   return (
     <>
       <NavUp />
       <NavDown />
-      <Routes>
-        <Route exact path="/" element={<GuestMainpage />} />
-         <Route path="/mainstore" element={<MainStore/>} />
+       <Routes>
+        <Route exact path="/" element={<Mainstore/>} />
          <Route path="/search" element={<SearchResults />} />
          <Route path="/product/:id" element={<ProductPage />} />
         <Route path="/checkout" element={<Checkout />} /> 

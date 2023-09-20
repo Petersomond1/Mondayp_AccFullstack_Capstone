@@ -1,8 +1,7 @@
 import React from 'react';
-import './GuestHomepage.css';
+import './AdvertpageRow.css';
 import { Slide} from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
-// import { isDepsOptimizerEnabled } from 'swiper';
 // import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader.
 // import { Carousel } from 'react-responsive-carousel';
 
@@ -12,12 +11,10 @@ import 'react-slideshow-image/dist/styles.css';
 
 
     const divStyle = {
-        autoplay: 'false', 
-        // isDepsOptimizerEnabled : 'true', 
         justifyContent: 'center',
         display: 'flex',
         alignItems: 'center',
-        height: '200px',
+        height: '110vh',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: '50% 60%',
@@ -52,7 +49,7 @@ const slideImages = [
      { url:'https://ik.imagekit.io/amazonmondayp/amazon-image/amazon%20carousel%201/61wPYUzFKPL._SX3000_.jpg?updatedAt=1694184068409',caption: "5"},
  ]
  
- export default function AdvertpageRow4_Carousel () {
+ export default function AdvertpageRow1_Carousel () {
    return (
      < >
        <div className="slide_container">
@@ -77,20 +74,4 @@ const slideImages = [
      </>
    );
  }
- AdvertpageRow4_Carousel;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ AdvertpageRow1_Carousel;
