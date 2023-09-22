@@ -137,12 +137,20 @@ font-weight: bold;
         margin-top: 22px; 
     }
     
-    .flagicon{
-        margin-top: 4px;
+   .flagicon{
+       
+      margin-top: -4px;
         margin-bottom: 4px;
-        margin-left: 20px;
+        margin-left: 2px;
+        margin-right: 2px;
+       
     }
-        
+    img{
+        height: 26px;
+        width: 26px;
+        resize: both;
+     }      
+  
     .navbar_nationallanguag_abrev {
       margin-top: 3px;
       margin-left: 3px;
@@ -187,9 +195,10 @@ font-weight: bold;
     }
     
     .navbar_cart {
-        margin-left: 10px;
+        margin-left: auto;
         font-weight: bold;
         display: block;
+        margin-right: 0px;
         }
     
         .cart_text {

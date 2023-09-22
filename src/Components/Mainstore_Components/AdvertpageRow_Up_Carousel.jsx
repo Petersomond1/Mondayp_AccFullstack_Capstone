@@ -2,8 +2,10 @@ import React from 'react';
 import './AdvertpageRow.css';
 import { Slide} from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
-// import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader.
-// import { Carousel } from 'react-responsive-carousel';
+// import { Link } from 'react-router-dom';
+// import {useparams} from 'react-router-dom';
+
+
 
 
 // petersomond@PetersoMond Mondayp_AccFullstack_Capstone % npm install react-slideshow-image
@@ -49,11 +51,17 @@ const slideImages = [
      { url:'https://ik.imagekit.io/amazonmondayp/amazon-image/amazon%20carousel%201/61wPYUzFKPL._SX3000_.jpg?updatedAt=1694184068409',caption: "5"},
  ]
  
+ 
+// const    product (Id: i) = useparams (),
+
  export default function AdvertpageRow_Up_Carousel () {
+
+  
    return (
      < >
        <div className="slide_container">
-         <Slide>
+         <Slide >
+         {/* <Link to= {`/products/${i}`}> */}
            {slideImages.map((image, index) => (
              <div key={index}>
                <div
@@ -66,6 +74,7 @@ const slideImages = [
                </div>
              </div>
            ))}
+           {/* </Link> */}
          </Slide>
          {/* <div className="slide_container"></div>
       <div  style={"h=[50px], bg-gradient-to-b, color from-stone-to-900"}></div>  */}

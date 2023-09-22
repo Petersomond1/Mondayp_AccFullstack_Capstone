@@ -2,6 +2,7 @@ import "./nav.css";
 import Cart from "./Cart";
 import Sign_In_Accounts from "./Sign_In_Accounts";
 import ReturnsOrders from "./Returns_Orders";
+import { Icon } from "@mui/material";
 
 export default function NavUp() {
   return (
@@ -166,10 +167,10 @@ export default function NavUp() {
         </div>
 
         <div className="nationlanguage_wrap">
-          <img
-            className="flagicon"
-            src="https://ik.imagekit.io/amazonmondayp/amazon-image/amazon%20carousel%201/usaflagiconTiny.png?updatedAt=1694475933756"
+         <Icon  className="flagicon">
+         <img src="https://ik.imagekit.io/amazonmondayp/amazon-image/amazon%20carousel%201/usaflagiconTiny.png?updatedAt=1694475933756"
           />
+          </Icon> 
           <div className="navbar_nationallanguag_abrev">EN</div>
         </div>
 

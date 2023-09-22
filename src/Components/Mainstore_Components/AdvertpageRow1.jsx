@@ -14,8 +14,7 @@
 
 import React from 'react'
 import { useState, useEffect } from 'react';
-import AdvertpageRow from './AdvertpageRow.css';
-// import Mainstore from './Mainstore.css'
+import AdvertpageRow from './AdvertpageRow.css?inline';
 
 
 function AdvertpageRow1 () {

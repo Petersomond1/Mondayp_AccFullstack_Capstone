@@ -2,12 +2,8 @@ import React from 'react';
 import './AdvertpageRow.css';
 import { Slide} from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
-// import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader.
-// import { Carousel } from 'react-responsive-carousel';
+import {Link} from 'react-router-dom'
 
-
-// petersomond@PetersoMond Mondayp_AccFullstack_Capstone % npm install react-slideshow-image
-// get the slideimages from external API
 
 
     const divStyle = {
@@ -54,18 +50,23 @@ const slideImages = [
      < >
        <div className="slide_container">
          <Slide>
+         
            {slideImages.map((image, index) => (
              <div key={index}>
                <div
                  className="divStyle"
                  style={{ ...divStyle, backgroundImage: `url(${image.url})` }}
                >
+                 
                  <span className="spanStyle" style={{ spanStyle }}>
                    {image.caption}
                  </span>
+                 
+                    
                </div>
              </div>
            ))}
+           
          </Slide>
          {/* <div className="slide_container"></div>
       <div  style={"h=[50px], bg-gradient-to-b, color from-stone-to-900"}></div>  */}
