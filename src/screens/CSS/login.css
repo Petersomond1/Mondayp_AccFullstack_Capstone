@@ -1,70 +1,92 @@
  .login {
-    height: 150vh;
-    width: 80vw;
+    height:100vh;
+    width: 78vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 0%;
+
+    margin-bottom: 25px;
    
 } 
+
+
 img{
-height: 300px;
-width: 160px;   
-}
+height: 60px;
+width: 150px; 
+margin-top: 2px;  
+} 
 .login_container {
-    width: 300px;
+    margin-top: 6px;
+    width: 330px;
     height: fit-content;
     display: flex;
-    flex-direction:column;
-    border-radius: 5px;
-    border: 2px solid lightgray;
-    padding: 20px;
+    flex-direction: column;
+    border-radius: 12px;
+    border: 7px solid lightgray;
+    padding: 10px;
     align-content: center;
     align-items: center;
-    background-color:white;
-   
+    background-color: white;
+}
+
+
+
+.signinbutton_grid {
+    grid-gap: 5px;
+    /* margin-top: 5px; */
+}
+
+.forgotpxwButton {
+    background-color: white;
+    text-decoration: underline;
+    margin-top: 15px;
+    font-size: 10px;
+    cursor: pointer;
 }
 
 .login_container> h1{
     font-weight:500;
-    margin: 20px;
+    margin: 5px;
     align-self: auto;
 }
 
-.login_container > form> h5{
-    margin-bottom: 5px; 
+.login_container > form> h4{
+    /* margin-bottom: 5px;  */
     color: black;
     margin-left: 20px;
+    display: grid;
 }
-.login_container > input{
-    height: 30px;
+.login_container > form > input{
+    height: 20px;
     background-color: white;
-    width: 98%;
-
+    width: 90%;
+outline: none;
+padding: 5px;
 }
 
 .login_container> p{
-    margin-top: 15px;
-    font-size: 12px;
+    margin-top: 5px;
+    font-size: 5px;
 }
 
-.login_sigInButton{
-    background: #f0c14b;
+.login-_signinButton{
+        background: yellow;
+        border-radius: 2px;
+        width: 94%;
+        height: 32px;
+        border: 1px solid;
+        margin-top: 5px;
+        border-color: #a88734;
+    }
+
+.login_registration{
     border-radius: 2px;
     width: 100%;
     height: 30px;
-    border: ipx solid;
-    margin-top: 10px;
-    border-color: #a88734;
-}
-
-.login_registerButton{
-    border-radius: 2px;
-    width: 200%;
-    height: 30px;
     border: 1px solid;
-    margin-top: 10px;
+    margin-top: auto; 
     border-color: lightgray;
+    margin-bottom: 0px;
 }

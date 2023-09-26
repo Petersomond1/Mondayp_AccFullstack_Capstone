@@ -27,3 +27,5 @@ function ProductPage() {
 }
 
 export default ProductPage
+
+// there is return for a single product Box specification here

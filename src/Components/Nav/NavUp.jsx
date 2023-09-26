@@ -3,6 +3,7 @@ import Cart from "./Cart";
 import Sign_In_Accounts from "./Sign_In_Accounts";
 import ReturnsOrders from "./Returns_Orders";
 import { Icon } from "@mui/material";
+import { Link } from "react-router-dom";
 
 export default function NavUp() {
   return (
@@ -175,9 +176,11 @@ export default function NavUp() {
         </div>
 
         <div className="nav-right">
+          <Link to="/login">
           <div className="navbar_signinaccounts">
             <Sign_In_Accounts />
           </div>
+          </Link>
           <div className="navbar_returnsandorders">
             <ReturnsOrders />
           </div>
