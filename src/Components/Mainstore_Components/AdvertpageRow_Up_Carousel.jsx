@@ -2,14 +2,6 @@ import React from 'react';
 import './AdvertpageRow.css';
 import { Slide} from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
-// import { Link } from 'react-router-dom';
-// import {useparams} from 'react-router-dom';
-
-
-
-
-// petersomond@PetersoMond Mondayp_AccFullstack_Capstone % npm install react-slideshow-image
-// get the slideimages from external API
 
 
     const divStyle = {

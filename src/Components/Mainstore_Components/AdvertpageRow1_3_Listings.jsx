@@ -3,14 +3,19 @@ import { useState, useEffect } from 'react';
 import './AdvertpageRow.css';
 
 
-function AdvertpageRow1 () {
-    // https://fakestoreapi.com/products
+function AdvertpageRow1_3_Listings () {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {(async () => {
-        const response = await fetch('https://fakestoreapi.com/products/products');
-        const json = await response.json();
-        setProducts(json);
+        const response = await fetch('https://fakestoreapi.com/products');
+
+if (!response.ok) {
+    throw new Error(`HTTP error! status: ${response.status}`);
+} else {
+    const JSON = await response.json();
+    setProducts(JSON);
+}
+
     })()}, []);
   return (
     <>
@@ -18,7 +23,7 @@ function AdvertpageRow1 () {
         <div className='container'>
 {products.map((values) => {
     return (
-      <>
+      <div key={values.id}>
       <div className="box_1">
           <div className="content">
               <h3>{values.title}</h3>
@@ -43,7 +48,7 @@ function AdvertpageRow1 () {
           </div>
            <img src={values.image} alt={values.title} />
       </div>
-   </>
+   </div>
     )
 })}
  </div>
@@ -53,5 +58,5 @@ function AdvertpageRow1 () {
   )
 }
 
-export default AdvertpageRow1;
+export default AdvertpageRow1_3_Listings;
 

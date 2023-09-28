@@ -1,38 +1,52 @@
 import React from "react";
-import Mainstore from "./Components/Mainstore";
+import Header from "./Header";
 import "./App.css";
 import "./index.jsx";
 import { Routes, Route } from "react-router-dom";
-import SearchResults from "./Components/SearchResults";
-import ProductPage from "./Components/ProductPage";
-import Header from "./Header";
-import Login from "./screens/Login";
-import LoginApp from "./screens/LoginApp";
-import "./screens/CSS/Login.css";
-import Register from "./screens/Register";
-import Cart from "./Components/Nav/Cart";
-import AdvertpageRow_4 from "./Components/Mainstore_Components/AdvertpageRow_4";
-// import Authenticate from "./screens/Authenticate";
+import Mainstore from "./Components/Mainstore";
+
+
+// // import { Routes, Route } from "react-router-dom";
+// // import SearchResults from "./Components/SearchResults";
+// // import ProductPage from "./Components/ProductPage";
+
+// // import Login from "./screens/Login";
+// // import LoginApp from "./screens/LoginApp";
+// // import "./screens/CSS/Login.css";
+// // import Register from "./screens/Register";
+// // import Cart from "./Components/Nav/Cart";
+// // import AdvertpageRow_4 from "./Components/Mainstore_Components/AdvertpageRow5_1";
+// // import Authenticate from "./screens/Authenticate";
+// // import Advertpage_Carousel_Listings from "./Components/Mainstore_Components/Advertpage_Carousel_Listings";
+// // import Advertpage_Carousel_ProductDetails from "./Components/Mainstore_Components/Advertpage_Carousel_ProductDetails";
+// // import AdvertpageRow1 from "./Components/Mainstore_Components/AdvertpageRow1_1";
+
 
 function App() {
   return (
     <>
     
-        <div className="app">
+         <div className="app">
           <><Header/></>
-          <Routes>
-          <Route path="/AdvertpageRow_4" element={<><AdvertpageRow_4/></>}/>
-          <Route path="/Register" element={<><Register/></>}/>
-          <Route path="/LoginApp" element={<><LoginApp/></>}/>
-            <Route path="/login" element={<><Login/></>}/>
-            <Route exact path="/" element={<Mainstore />} />
-            <Route path="/search" element={<SearchResults />} />
-            <Route path="/product/:id" element={<ProductPage />} />
-            <Route path="/cart" element={<Cart/>} />
-          </Routes>
-        </div>
-    </>
-  );
-}
+           <Routes> 
+            <Route path="/" element={<><Mainstore/></>}/>
+            
+//           {/* <Route path="/products/:slug" element={<><Advertpage_Carousel_ProductDetails/></>}/>
+//           <Route path="/Advertpage_Carousel_ProductDetails" element={<><Advertpage_Carousel_ProductDetails/></>}/>
+//           <Route path="/Advertpage_Carousel_Listings" element={<><Advertpage_Carousel_Listings/></>}/> 
+//           <Route path="/AdvertpageRow_4" element={<><AdvertpageRow_4/></>}/>
+//           <Route path="/Register" element={<><Register/></>}/>
+//           <Route path="/LoginApp" element={<><LoginApp/></>}/>
+//             <Route path="/login" element={<><Login/></>}/> */}       
+//             {/* <Route path="/search" element={<SearchResults />} />
+//             <Route path="/product/:id" element={<ProductPage />} />
+//             <Route path="/cart" element={<Cart/>} />
+//             <Route path="/product/:id" element={<AdvertpageRow1 />} /> */}
 
-export default App;
+           </Routes>
+         </div>
+     </>
+   );
+ }
+
+ export default App;

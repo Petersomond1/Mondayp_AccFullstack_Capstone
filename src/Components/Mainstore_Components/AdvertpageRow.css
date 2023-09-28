@@ -168,7 +168,7 @@ opacity: 0.8;
     background-color:azure;
     max-width: 1300px;
     margin: 0 auto;
-    display: flex;
+    display:grid;
     justify-content: space-around;
     flex-wrap: wrap;
     z-index: 5;
@@ -192,10 +192,12 @@ opacity: 0.8;
   }
 
   .h3{
-    font-size: .5rem;
+    font-size: .9rem;
     font-family: 'stylish', sans-serif;
     color: #fff;
   }
+
+  
   .p{
     font-size: .9rem;
     font-family: 'stylish', sans-serif;
@@ -248,6 +250,7 @@ opacity: 0.8;
 }
 
 
+
   .card_container {
 	  display: grid;
 	  grid-template-columns: 350px 350px 350px;
@@ -266,7 +269,7 @@ opacity: 0.8;
 	.card_column {
 	  padding: 8px;
 	  height: 380px;
-    width: 310px;
+    width: 284px;
 	  margin: 20px 45px 0px 15px;
     background-color: white;
 	  /* background-color: blue; */
@@ -275,4 +278,70 @@ opacity: 0.8;
     align-content: center;
 	}
 
+  .page__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 3px;
+    z-index: 1;
+    margin-left: 3px;
+    margin-right: -52px;
+}
+
+
+  .card {
+    width: 290px;
+  }
+  .card_body_single {
+    /* display: inline-block; */
+    width: 340px;
+    height: 420px;
+    margin-right: 0px;
+    
+  
+    margin-left: 0%;
+    align-items: center;
+    align-content: center;
+    opacity: 9;
+    color:darkred
+  }
+
+
+  .card_container_single {
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    text-align: center;
+  width: 330px;
+  height: 420px;
+  margin-right: 5px;
+  margin-left: 2px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  background-color: red;
+  
+  align-items: center;
+      
+  }
+
+  .card_column_single {
+	  padding: 8px;
+	  height: 380px;
+    width: 60px;
+	  margin: 20px 45px 0px 15px;
+    background-color: green;
+	  /* background-color: blue; */
+    border-color: black;
+    align-items:center ;
+    align-content: center;
+	}
  
+  .box_single {
+    display:grid;
+    background-color: burlywood;
+    width:70px;
+    height: 300px;
+    margin: 10px 30px 10px 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 10px #000;
+    border-radius: 2px;
+  }
