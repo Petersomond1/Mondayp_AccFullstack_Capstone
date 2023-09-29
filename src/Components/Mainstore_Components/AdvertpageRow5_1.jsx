@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 
-function AdvertpageRow_4() {
+function AdvertpageRow5_1 () {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -74,4 +74,4 @@ function AdvertpageRow_4() {
   );
 }
 
-export default AdvertpageRow_4;
+export default AdvertpageRow5_1;

@@ -62,6 +62,5 @@ function Advertpage_Carousel_Listings () {
     
   )
 }
-
-export default Advertpage_Carousel_Listings;
+ export default Advertpage_Carousel_Listings;
 

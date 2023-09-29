@@ -61,6 +61,7 @@ import "./Product.css";
 // import Currency from "react-currency-formatter";
 import { StarIcon } from "@heroicons/react/solid";
 // import { useStateValue } from "../StateProvider";
+import ProductFeed from "./ProductFeed";
 
 const MAX_RATING = 5;
 const MIN_RATING = 1;
