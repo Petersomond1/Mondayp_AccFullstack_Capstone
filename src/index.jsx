@@ -22,7 +22,7 @@ export {default as Mainstore } from "./Components/Mainstore"
 export { default as Advertpage_Carousel_Listings } from "./Components/Mainstore_Components/Advertpage_Carousel_Listings"    
 
 
-const newLocal = module.exports = {
+const newLocal = {
     // Your configuration options here
     images: {
         domains: ["links.papareact.com", "fakestoreapi.com"],

@@ -57,12 +57,12 @@ export default function Mainstore({products}) {
 
 
 
-module.exports = {
-  plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
-  },
-}
+// module.exports = {
+//   plugins: {
+//     tailwindcss: {},
+//     autoprefixer: {},
+//   },
+// }
 
 
 export async function getServerSideProps(context) {

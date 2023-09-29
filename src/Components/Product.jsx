@@ -58,7 +58,6 @@
 // import image from "../asserts/images/...";
 import React, { useState } from "react";
 import "./Product.css";
-import Image from "next/image";
 // import Currency from "react-currency-formatter";
 import { StarIcon } from "@heroicons/react/solid";
 // import { useStateValue } from "../StateProvider";
