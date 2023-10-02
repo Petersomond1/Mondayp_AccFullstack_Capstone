@@ -1,3 +1,7 @@
+// A RENDER OR PRINT FXN TO RENDER ALL PRODUCTS WITH A SLICE EMBEDDED 
+
+
+
 // import { useState, useEffect } from 'react';
 import Product from './Product'
 import './Product.css'

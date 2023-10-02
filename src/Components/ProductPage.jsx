@@ -1,3 +1,6 @@
+// FXN TO FETCH SINGLE PRODUCT INCONJUCTION WITH THE CALL-API FXN.
+
+
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import {useState, useEffect} from 'react';

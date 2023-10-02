@@ -1,3 +1,6 @@
+// FXN THAT FETCH A CATEGORY AND HAS A RENDER 3XCARD.
+
+
 import React from 'react'
 import { useState, useEffect } from 'react';
 import './AdvertpageRow.css';

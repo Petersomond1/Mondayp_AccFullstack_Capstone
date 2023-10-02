@@ -1,42 +1,51 @@
-// // Import Swiper core and required modules
-// import { Navigation, Pagination, Scrollbar} from 'swiper/core';
-// import { Swiper, SwiperSlide } from 'swiper/react';
-// import React from 'react';
+import React from "react";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
-// // Import Swiper styles
-// import 'swiper/css';
-// import 'swiper/css/navigation';
-// import 'swiper/css/pagination';
-// import 'swiper/css/scrollbar';
-// // import 'swiper/css/ally';
 
-// const AdvertpageRow6_slider = () => {
 
-//   optimizeDeps: { 
-//     exclude: [ 'ally', 'navigation', 'swiper/core', 'swiper/react']
-//   }
-//   return (
-//     <Swiper
-//       // Install Swiper modules
-//       modules={[Navigation, Pagination, Scrollbar]}
-//       spaceBetween={50}
-//       slidesPerView={3}
-//       navigation
-//       pagination={{ clickable: true }}
-//       scrollbar={{ draggable: true }}
-//       onSwiper={(swiper) => console.log(swiper)}
-//       onSlideChange={() => console.log('slide change')}
-//     >
-//       <SwiperSlide> <img src="https://ik.imagekit.io/amazonmondayp/amazon-image/amazon%20carousel%201/61Yi3xNLEaL._SX3000_.jpg?updatedAt=1694184069310" alt="Image 1" /></SwiperSlide>
-//       <SwiperSlide> <img src="https://ik.imagekit.io/amazonmondayp/amazon-image/amazon%20carousel%201/41MTK9SUjkL._SX3000_.jpg?updatedAt=1694184069188" alt="Image 2" /></SwiperSlide>
-//       <SwiperSlide> <img src="https://ik.imagekit.io/amazonmondayp/amazon-image/amazon%20carousel%201/61Yi3xNLEaL._SX3000_.jpg?updatedAt=1694184069310" alt="Image 3" /></SwiperSlide>
-//       <SwiperSlide> <img src="https://ik.imagekit.io/amazonmondayp/amazon-image/amazon%20carousel%201/61wPYUzFKPL._SX3000_.jpg?updatedAt=1694184068409" alt="Image 4"/></SwiperSlide>
-//     </Swiper>
-//   );
-// };
 
-// export default 
-// AdvertpageRow6_slider;{
- 
-// }
+const settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+};
 
+
+  
+  export default function AdvertpageRow7_Slider() {
+    return (
+      <div>
+        <Slider {...settings}>
+        <div>
+            <img src="src/assets/images/pants1.jpg" alt="Image 1" />
+          </div>
+          <div>
+            <img src="src/assets/images/pants2.jpg" alt="Image 2" />
+          </div>
+          <div>
+            <img src="src/assets/images/pants3.jpg" alt="Image 3" />
+          </div>
+          <div>
+            <img src="src/assets/images/shirt1.jpg" alt="Image 4" />
+          </div>
+        </Slider>
+      
+      </div>
+    );
+  } AdvertpageRow7_Slider;
+
+  
+
+
+        // In these settings:
+// 
+        // dots: true enables navigation dots under the slider.
+        // infinite: true makes the slider infinite.
+        // speed: 500 sets the speed of the slide transition in milliseconds.
+        // slidesToShow: 4 makes the slider show four images at a time.
+        // slidesToScroll: 8 makes the slider scroll eight images at a time.
+        // Use the Slider component in your render method and pass the settings as a prop:       

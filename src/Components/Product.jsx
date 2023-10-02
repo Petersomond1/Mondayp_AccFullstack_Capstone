@@ -1,3 +1,8 @@
+// PRODUCTDETAILS
+
+//CARD TO RENDER OR PRINT OUT SINGLE PRODUCT WITH ALL DETAILS AT LEVEL-3.
+//AND ALSO HAS A FETCH FXN
+
 // // import image from asserts/images/...";
 // import React from "react";
 // import "./Product.css";
@@ -56,6 +61,13 @@
 
 // // Path: src/Components/Product.jsx
 // import image from "../asserts/images/...";
+
+// function Product() {
+
+
+
+//CARD TO RENDER OR PRINT OUT SINGLE PRODUCT WITH ALL DETAILS.
+
 import React, { useState } from "react";
 import "./Product.css";
 // import Currency from "react-currency-formatter";

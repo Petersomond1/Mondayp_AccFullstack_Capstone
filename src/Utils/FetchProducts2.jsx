@@ -1,10 +1,12 @@
+// FETCH FXN  THAT WAS SUPPOSED TO BE USED TO PULL DATA FROM API INTO THE MAINSTORE. 
+
+
 import {React} from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 
 
 function FetchProducts_2 () {
-    // https://fakestoreapi.com/products
     const [products, setProducts] = useState([]);
 
     useEffect(() => {(async () => {

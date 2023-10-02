@@ -15,7 +15,7 @@ import Mainstore from "./Components/Mainstore";
 // // import "./screens/CSS/Login.css";
 // // import Register from "./screens/Register";
 // // import Cart from "./Components/Nav/Cart";
-// // import AdvertpageRow_4 from "./Components/Mainstore_Components/AdvertpageRow5_1";
+import AdvertpageRow6_LiveVideo from "./Components/Mainstore_Components/AdvertpageRow6_LiveVideo";
 // // import Authenticate from "./screens/Authenticate";
 // // import Advertpage_Carousel_Listings from "./Components/Mainstore_Components/Advertpage_Carousel_Listings";
 // // import Advertpage_Carousel_ProductDetails from "./Components/Mainstore_Components/Advertpage_Carousel_ProductDetails";
@@ -31,6 +31,9 @@ function App() {
            <Routes> 
             <Route path="/" element={<><Mainstore/></>}/>
             
+
+            {/* <Route path="/AdvertpageRow6_liveVideo" element={<AdvertpageRow6_LiveVideo/>} /> */}
+
 //           {/* <Route path="/products/:slug" element={<><Advertpage_Carousel_ProductDetails/></>}/>
 //           <Route path="/Advertpage_Carousel_ProductDetails" element={<><Advertpage_Carousel_ProductDetails/></>}/>
 //           <Route path="/Advertpage_Carousel_Listings" element={<><Advertpage_Carousel_Listings/></>}/> 

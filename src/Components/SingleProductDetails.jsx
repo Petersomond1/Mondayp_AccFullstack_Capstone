@@ -1,3 +1,7 @@
+// FXN RECIEVING PRODUCTS DATA AND PRINTING OUT THE PRODUCT DETAILS AT LEVEL-3
+// NOTE SLUG =ID
+
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
