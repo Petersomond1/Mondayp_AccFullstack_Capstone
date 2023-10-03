@@ -24,7 +24,6 @@ import AdvertpageRow7_slider from "./Mainstore_Components/AdvertpageRow7_slider"
 import AdvertpageRow6_LiveVideo from "./Mainstore_Components/AdvertpageRow6_LiveVideo";
 
 
-
 export default function Mainstore() {
   const [products, setProducts] = useState([]);
   
@@ -72,20 +71,23 @@ export default function Mainstore() {
 
 {/* Live video port */}
 
-        {/* <table>
+        <tbody>
                <tr>
-                 <th>  <AdvertpageRow6_LiveVideo /></th>
+                 <th>  <AdvertpageRow6_LiveVideo /> </th>
                </tr>
-        </table>
-       */}
+        </tbody>
+      
+
 
 
 {/* Four port Slider that refuse to slide. */}
-        <table>
-               <tr>
+
+
+                <tbody>
+                 <tr>
                  <th>   <AdvertpageRow7_slider /></th>
                </tr>
-        </table>
+               </tbody>
       
 
 {/* Single port Carousel. */}
@@ -97,7 +99,7 @@ export default function Mainstore() {
  
               
       {/* </main> */}
-      // Footer
+  {/* Footer */}
     </div>
   );
 }

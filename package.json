@@ -28,6 +28,7 @@
     "react-slick": "^0.29.0",
     "react-slideshow-image": "^4.2.1",
     "react-swift-slider": "^7.2.0",
+    "react-youtube": "^10.1.0",
     "slick-carousel": "^1.8.1",
     "swiper": "^10.2.0"
   },
