@@ -1,19 +1,19 @@
 // FETCH FXN  THAT WAS SUPPOSED TO BE USED TO PULL DATA FROM API INTO THE MAINSTORE. 
 
 
-import {React} from 'react';
-import { useEffect } from 'react';
-import { useState } from 'react';
+// import {React} from 'react';
+// import { useEffect } from 'react';
+// import { useState } from 'react';
 
 
-function FetchProducts_2 () {
-    const [products, setProducts] = useState([]);
+// function FetchProducts_2 () {
+//     const [products, setProducts] = useState([]);
 
-    useEffect(() => {(async () => {
-        const response = await fetch('https://fakestoreapi.com/products');
-        const data = await response.json();
-        setProducts(data);
-    })()}, []);
+//     useEffect(() => {(async () => {
+//         const response = await fetch('https://fakestoreapi.com/products');
+//         const data = await response.json();
+//         setProducts(data);
+//     })()}, []);
 
 //   return (
 //     <>
@@ -38,6 +38,6 @@ function FetchProducts_2 () {
 //  </>
     
 //   )
-}
+// }
 
-export default FetchProducts_2;
+// export default FetchProducts_2;

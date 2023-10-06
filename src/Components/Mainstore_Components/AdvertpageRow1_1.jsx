@@ -23,7 +23,7 @@ function AdvertpageRow1_1({id = 12}) {
                 })
                 const result = await response.json();
 
-                console.log(result);
+                // console.log(result);
 
 
 

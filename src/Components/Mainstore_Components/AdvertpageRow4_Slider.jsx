@@ -1,26 +1,84 @@
-import React from 'react';
-import SwiftSlider from 'react-swift-slider';
 
-const data =  [
-    {'id':'1','src':'src/assets/images/pants1.jpg'},
-    {'id':'2','src':'src/assets/images/pants2.jpg'},
-    {'id':'3','src':'src/assets/images/pants3.jpg'},
-    {'id':'4','src':'src/assets/images/shirt1.jpg'},
-    {'id':'5','src':'src/assets/images/shirt2.jpg'},
-    {'id':'6','src':'src/assets/images/shirt3.jpg'}
-];
+import React from "react";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
 
-function AdvertpageRow4_Slider() {
 
+
+const settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+};
+
+
+  
+  export default function AdvertpageRow4_Slider() {
     return (
+      <div>
+        <Slider {...settings}>
         <div>
-            <SwiftSlider data={data} height={500} />
-        </div>
-    )
-}
+            <img src="src/assets/images/pants1.jpg" alt="Image 1" />
+          </div>
+          <div>
+            <img src="src/assets/images/pants2.jpg" alt="Image 2" />
+          </div>
+          <div>
+            <img src="src/assets/images/pants3.jpg" alt="Image 3" />
+          </div>
+          <div>
+            <img src="src/assets/images/shirt1.jpg" alt="Image 4" />
+          </div>
+        </Slider>
+      
+      </div>
+    );
+  } AdvertpageRow4_Slider;
 
-export default AdvertpageRow4_Slider;
+  
+
+
+        // In these settings:
+// 
+        // dots: true enables navigation dots under the slider.
+        // infinite: true makes the slider infinite.
+        // speed: 500 sets the speed of the slide transition in milliseconds.
+        // slidesToShow: 4 makes the slider show four images at a time.
+        // slidesToScroll: 8 makes the slider scroll eight images at a time.
+        // Use the Slider component in your render method and pass the settings as a prop:       
+
+
+
+
+
+
+// import React from 'react';
+// import SwiftSlider from 'react-swift-slider';
+
+// const data =  [
+//     {'id':'1','src':'src/assets/images/pants1.jpg'},
+//     {'id':'2','src':'src/assets/images/pants2.jpg'},
+//     {'id':'3','src':'src/assets/images/pants3.jpg'},
+//     {'id':'4','src':'src/assets/images/shirt1.jpg'},
+//     {'id':'5','src':'src/assets/images/shirt2.jpg'},
+//     {'id':'6','src':'src/assets/images/shirt3.jpg'}
+// ];
+
+
+// function AdvertpageRow4_Slider() {
+
+//     return (
+//         <div>
+//             <SwiftSlider data={data} height={500} />
+//         </div>
+//     )
+// }
+
+// export default AdvertpageRow4_Slider;
 
 
 

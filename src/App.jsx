@@ -3,7 +3,9 @@ import Header from "./Header";
 import "./App.css";
 import "./index.jsx";
 import { Routes, Route } from "react-router-dom";
-import Mainstore from "./Components/Mainstore";
+// import Mainstore from "./Components/Mainstore";
+// import ProductFeed from "./Components/ProductFeed";
+import CategoryStore from "./Components/CategoryStore";
 
 
 // // import { Routes, Route } from "react-router-dom";
@@ -29,8 +31,11 @@ function App() {
          <div className="app">
           <><Header/></>
            <Routes> 
-            <Route path="/" element={<><Mainstore/></>}/>
+            {/* <Route path="/" element={<><Mainstore/></>}/> */}
             
+            <Route path="/CategoryStore" element={<><CategoryStore/></>}/>
+
+            {/* <Route path="/ProductFeed" element={<><ProductFeed /></>}/> */}
 
             {/* <Route path="/AdvertpageRow6_liveVideo" element={<AdvertpageRow6_LiveVideo  embedId ="HE92WBA7R14" />} /> */}
 
