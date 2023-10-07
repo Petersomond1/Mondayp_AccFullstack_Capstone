@@ -17,13 +17,13 @@ function Product({ id, title, price, description, category, image }) {
     const [hasPrime, setHasPrime] = useState(Math.random() < 0.5);
     
     return (
-      
-      <div className="product" key={id} >
-       
-      <div className= "container relative flex flex-col m-5 bg-white z-30 p-10">
-        <p className="absolute top-2 right-2 text-xs italic text-gray-400">{category}</p>
+      <div className='productLevel2CardContainer' key={id} >
+      <div>
         <img src={image} height={200} width={200} objectFit="contain" alt="" />
-        <h4 className="my-3">{title}</h4>
+        </div>
+        <div className='content'>
+        <p className="category_text">{category}</p> 
+        <h4 className="title_text">{title}</h4>
         <div className="flex">
 
         {Array(rating)
@@ -33,17 +33,20 @@ function Product({ id, title, price, description, category, image }) {
            ))}
         </div>
         <p>${price}</p>
-        <p className="text-xs my-2 line-clamp-2 ">{description}</p>
+        <p className="description_text">{description}</p>
         {hasPrime && (
-          <div className="flex items-center space-x-2 mt-5 ">
+          <div className="hasprime_text ">
             <img className="w-12" src="https://ik.imagekit.io/amazonmondayp/Amazon%20Hasprime%20logo.PNG?updatedAt=1695912404155" alt="hasprime" style={{ width: "75px", height: "35px" }}/>
-            <p className="text-xs text-gray-500">FREE Next-day Delivery</p>
+            <p className="freeDelivery_text">FREE Next-day Delivery</p>
           </div>
         )}
-        <button className=" mt-auto button"> Add to Basket</button>
+        <div className="add2basket&BuyNow wrap">
+        <button  onClick={A} className="add2Basket_text_button"> Add to Basket</button>
+        <button  className="add2Basket_text_button"> Buy now</button>
+        </div>
+        </div>
       </div>
-      </div>
-     
+      // </div>
     );
 }
 

@@ -1,14 +1,18 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 import Product from './Product'; // import the Product component
+import { useParams } from 'react-router-dom';
 
 function CategoryStore() {
     const [Products, setProducts] = useState([]);
+    let { Category } = useParams();
+console.log(Category)
+
 
     useEffect(() => {
         (async () => {
             try {
-                const response = await fetch(`https://fakestoreapi.com/products/category/jewelery`, {
+                const response = await fetch(`https://fakestoreapi.com/products/category/${Category}`, {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json'

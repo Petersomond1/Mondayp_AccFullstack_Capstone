@@ -5,6 +5,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 import './AdvertpageRow.css';
+import { Link } from 'react-router-dom';
 
 function AdvertpageRow1_1({id = 12}) {
     const [product, setProduct] = useState([]);
@@ -42,7 +43,7 @@ function AdvertpageRow1_1({id = 12}) {
 
                     <div className="box_single">
                         <div className="content">
-                            <h3 >{product.category}</h3>
+                            <h3 ><Link to={`/CategoryStore/${product.category}`}>{product.category}</Link></h3>
                         </div>
                         <img src={product.image} alt={product.title} />
                     </div>

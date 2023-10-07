@@ -8,7 +8,9 @@ function Cart() {
       
   const navigate = useNavigate()
   const [total, setTotal] = useState(0)
-  const carts = JSON.parse(localStorage.getItem('cart')) || []
+  // const carts = JSON.parse(localStorage.getItem('cart')) || []
+
+const carts = [ {price: 100, quantity: 2, id: 1}]
 
   useEffect(() => {
     const total = carts.reduce((acc, item) => {
@@ -52,7 +54,8 @@ function Cart() {
   }
 
   if(carts.length === 0) {
-    return <div className='az'>Cart is Empty</div>
+    return <div className='az'>0</div>
+    // later correct this to Read "Cart is Empty"
   }
 
   return (

@@ -208,11 +208,6 @@ font-weight: bold;
         }
     
         .cart_icon {
-            background: url('https://ik.imagekit.io/amazonmondayp/amazon-image/sprite_350x.png?updatedAt=1693788045797') no-repeat -9px -339px;
-            width: 40px;
-            height: 30px;
-            margin-top: -15px;
-            margin-left:0px;
         }
     
         .count {
@@ -248,14 +243,20 @@ font-weight: bold;
 /* Css for Cart-JSX as follows */
 
 
-.az {
+ .az {
+    background: url('https://ik.imagekit.io/amazonmondayp/amazon-image/sprite_350x.png?updatedAt=1693788045797') no-repeat -9px -339px;
+    width: 40px;
+    height: 30px;
+    margin-top: 2px;
+    margin-left:15px;
     display: flex; 
 justify-content: center; 
 align-items: center; 
-font-size: 2.25rem;
-line-height: 2.5rem; 
-height: 55vh;
+font-size: 1.0rem;
+line-height: 1rem; 
 }
+
+
 .a {
 max-width: 60rem; margin-left: auto; margin-right: auto; margin-top: 2.5rem;
 }

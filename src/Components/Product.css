@@ -48,32 +48,78 @@
   .link {
     @apply cursor-pointer; hover:underline;
   }
-  .button {
-    @apply  py-2 text-xs md:text-sm bg-gradient-to-b from-yellow-200 to-yellow-400 border border-yellow-300 rounded-sm focus:outline-none focus:ring-2 focus:ring-yellow-500 active: from-yellow-500 ;
-  }
+ 
 }
 
 
+.productLevel2CardContainer {
+  display: flex; 
+position: relative; 
+z-index: 30; 
+padding: 10px; 
+margin: 5px; 
+flex-direction:row; 
+background-color: #ffffff; 
+border-radius: 5px;
+border: 3px solid aqua;
+}
 
- 
- .container {
-  opacity: .9;
-  background-color:azure;
-  max-width: 1000px;
-  max-height: 1000px;
-  margin: 0 auto;
-  display:flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  z-index: 5;
-}  
- 
- /* .box_single {
-  background-color: burlywood;
-  width:270px;
-  height: 320px;
-  margin: 5px;
-  padding: 10px;
-  box-shadow: 2px 2px 2px #000;
-  border-radius: 2px;
-}   */
+.category_text {
+  position: absolute; 
+  top: 2px; 
+  right: 2px; 
+  font-size: 3px;
+  line-height: 4px; 
+  font-style: italic; 
+  color: #9CA3AF; 
+  margin-top: 3px;
+margin-bottom: 3px;
+}
+
+.title_text {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.description_text {
+margin-top: 0.5rem;
+margin-bottom: 0.5rem; 
+font-size: 0.75rem;
+line-height: 1rem;
+}
+
+.hasprime_text {
+  display: flex; 
+margin-top: 1.25rem; 
+margin-left: 0.5rem; 
+align-items: center; 
+}
+
+.freeDelivery_text {
+  font-size: 1rem;
+line-height: 1rem; 
+color: #6B7280; 
+}
+
+.add2Basket_text_button {
+  margin-top: auto;
+  margin-left: 5px;
+
+  padding-top: 0.5rem;
+padding-bottom: 0.5rem; 
+border-radius: 0.125rem; 
+border-width: 1px; 
+border-color: #FCD34D; 
+font-size: 0.75rem;
+line-height: 1rem; 
+background-color: #F59E0B; 
+}
+
+.add2Basket_text_button:hover, .add2Basket_text_button:active {
+  border-radius: 2px solid green;
+  background-color: greenyellow;
+}
+
+.add2basket_BuyNow_wrap{
+  display: flex;
+}
