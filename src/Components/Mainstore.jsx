@@ -55,19 +55,14 @@ export default function Mainstore() {
 
 {/* Live video port */}
 
-        <tbody>
-               <tr>
-                 <th>  <AdvertpageRow6_LiveVideo /> </th>
-               </tr>
-        </tbody>
-      
+       <div> 
+        <AdvertpageRow6_LiveVideo />
+        </div>  
 
 {/* Single port Carousel. */}
-           <table>
-               <tr>
-    <th>  <AdvertpageRow4_Slider /></th>
-               </tr>
-        </table>
+          <div> 
+            <AdvertpageRow4_Slider />
+          </div>
 
       {/* </main> */}
   {/* Footer */}

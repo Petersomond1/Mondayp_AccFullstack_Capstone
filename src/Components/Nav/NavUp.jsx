@@ -12,7 +12,9 @@ export default function NavUp() {
      
       <div className="navbar_component">
         <div className="nav-amazonlogo_layer1">
-          <div className="nav-amazonlogo" href="/ref=nav_amazonlogo"></div>
+          <Link to="/">
+         <div className="nav-amazonlogo" href="/ref=nav_amazonlogo"></div>
+          </Link>
           <div className="nav_amazonlogo_locale">.us</div>
         </div>
 
@@ -184,9 +186,11 @@ export default function NavUp() {
           <div className="navbar_returnsandorders">
             <ReturnsOrders />
           </div>
+          <Link to="/cart">
           <div className="navbar_cart">
             <Cart />{" "}
           </div>
+          </Link>
         </div>
       </div>
       </div>
